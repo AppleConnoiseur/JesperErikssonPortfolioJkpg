@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_job_descs",
+  "info": {
+    "name": "desc",
+    "icon": "ad"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "text",
+      "required": true
+    }
+  }
+}
