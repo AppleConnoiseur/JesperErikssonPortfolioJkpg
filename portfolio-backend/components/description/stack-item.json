@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_job_description_stack_items",
+  "info": {
+    "name": "Stack_Item",
+    "icon": "boxes"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    }
+  }
+}

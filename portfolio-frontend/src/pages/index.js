@@ -7,13 +7,26 @@ import Jobs from "../components/Jobs"
 import Projects from "../components/Projects"
 import Blogs from "../components/Blogs"
 
-var MyName = 'Jesper E';
-const NameComponent = ({ fancy }) => {
-	if (fancy) {
-		return (<h3>{MyName}</h3>);
-	}
-	return (<p>{MyName}</p>);
-};
+export const query = graphql`
+  {
+    allStrapiProjects(filter: {featured: {eq: true}}) {
+      nodes {
+        id
+        title
+        description
+        github
+        url
+        image {
+          childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+      }
+    }
+  }
+`
 
 export default () => {
 	return (
