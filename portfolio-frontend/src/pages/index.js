@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql } from "gatsby"
+import { graphql, useStaticQuery } from "gatsby"
 import Layout from "../components/Layout"
 import Hero from "../components/Hero"
 import Services from "../components/Services"
@@ -15,7 +15,10 @@ export const query = graphql`
         title
         description
         github
-        url
+		url
+		stack {
+			title
+		}
         image {
           childImageSharp {
             fluid {
@@ -29,11 +32,18 @@ export const query = graphql`
 `
 
 export default () => {
+	const data = useStaticQuery(query);
+
+	const {
+		allStrapiProjects: { nodes: projects },
+	} = data;
+
 	return (
 		<Layout>
 			<Hero />
 			<Services />
 			<Jobs />
+			<Projects projects={projects} title="projekt i fokus" showLink />
 		</Layout>
 	)
 }
