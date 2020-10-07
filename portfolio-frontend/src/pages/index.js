@@ -27,16 +27,37 @@ export const query = graphql`
           }
         }
       }
-    }
+	}
+	
+	allStrapiBlogs(sort: {fields: date, order: DESC}, limit:3) {
+		nodes {
+		  id
+		  title
+		  slug
+		  desc
+		  image {
+			childImageSharp {
+			  fluid {
+				...GatsbyImageSharpFluid
+			  }
+			}
+		  }
+		  category
+		  date(formatString: "DD-MM-YYYY")
+		}
+	  }
   }
 `
 
 export default () => {
 	const data = useStaticQuery(query);
-
+	
 	const {
 		allStrapiProjects: { nodes: projects },
+		allStrapiBlogs: { nodes: blogs }
 	} = data;
+
+	console.log(blogs);
 
 	return (
 		<Layout>

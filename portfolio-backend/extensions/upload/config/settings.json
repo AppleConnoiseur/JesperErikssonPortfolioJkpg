@@ -1,0 +1,8 @@
+{
+	"provider":"cloudinary",
+	"providerOptions" : {
+		"cloud_name":"dxf1rousa",
+		"api_key":"239252679553789",
+		"api_secret":"K9YAlgSJ6YdThaa6csf8EAZmZ5A"
+	}
+}

@@ -33,7 +33,7 @@ const Project = ({ description, title, github, stack, url, image, index }) => {
 	  </article>
 	)
   }
-  
+
   /*if you for example forget to set these fields in strapi,
   so if you forget to give them values, you will get a error in your console
   */
