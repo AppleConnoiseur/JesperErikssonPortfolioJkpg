@@ -1,9 +1,11 @@
 import React from "react"
 import Layout from "../components/Layout"
+import SEO from "../components/SEO"
 
 const contact = () => {
 	return (
 		<Layout>
+			<SEO title="Kontakt" description="Kontaktsidan" />
 			<section className="contact-page">
 				<article className="contact-form">
 					<h3>kontakta mig</h3>

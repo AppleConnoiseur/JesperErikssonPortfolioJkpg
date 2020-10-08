@@ -6,6 +6,7 @@ import ReactMarkdown from "react-markdown"
 import Image from "gatsby-image"
 import { Link } from "gatsby"
 import downloadFile from "../../static/CV-JesperE.pdf"
+import SEO from "../components/SEO"
 // ...GatsbyImageSharpFluid
 
 const About = ({
@@ -17,6 +18,7 @@ const About = ({
 	const { info, stack, title, image } = nodes[0]
 	return (
 		<Layout>
+			<SEO title="CV" description="Jespers CV" />
 			<section className="about-page">
 				<div className="section-center about-center">
 					<Image fluid={image.childImageSharp.fluid} className="about-img" />
