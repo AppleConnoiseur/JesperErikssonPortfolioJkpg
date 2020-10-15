@@ -28,4 +28,4 @@ School project to the course **Publiceringsverktyg**.
 3. The site should now be deploying and you can configure it meanwhile it is working.
 
 # Tentamen
-My published website: https://jesper-e-portfolio.netlify.app/
+My published website: https://jesper-eriksson-publiceringsverktyg.netlify.app/
