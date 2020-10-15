@@ -26,3 +26,6 @@ School project to the course **Publiceringsverktyg**.
 1. Visit https://www.netlify.com/ and create an account if you haven't already. Then login.
 2. Drag the `public` folder from your `portfolio-frontend` project onto the drop area.
 3. The site should now be deploying and you can configure it meanwhile it is working.
+
+# Tentamen
+My published website: https://jesper-e-portfolio.netlify.app/about/
